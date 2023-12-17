@@ -1,0 +1,334 @@
+/* universal styles */
+html {
+    font-size: 16px;
+    background: #5A3F37;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C7744, #5A3F37);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* header */
+header{
+    display: flex;
+}
+
+.logo .image-container {
+    height: 5rem;
+}
+
+#nav {
+    /* border: 5px solid aquamarine; */
+    position: fixed;
+    z-index: 2;
+    background: #5A3F37;
+     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C7744, #5A3F37);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav ul {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav ul li a {
+    padding: 2rem;
+    font-size: 1.25rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 700;
+}
+
+.home {
+    color: #e16866;
+}
+
+.mission {
+    color: #e4bb82;
+}
+
+.products {
+    color: #d8dfa0;
+}
+
+.staff {
+    color: #6fd08c;
+}
+
+.contact {
+    color: #7b9ea8;
+}
+
+.home:hover, .mission:hover, .products:hover, .staff:hover, .contact:hover {
+    color: #fff7f7;
+    text-decoration: underline;
+}
+
+#nav button {
+    border: 2px solid #e16866;
+    color: white;
+    background-color: #a77c9b;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    width: 6rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1025px) {
+    #nav ul{
+        align-items: center;
+    }
+
+    #nav ul li a {
+        padding: .5rem;
+    }
+}
+
+/* banner */
+#home .banner {
+    top: 4.9rem;
+    position: relative;
+    height: 38rem;
+    opacity: 0.8;
+    margin-bottom: 5.5rem;
+    background-image: url('../images/banner-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 6rem;
+    font-family: 'Acme', cursive, sans-serif;
+    color:#734a3c;
+    text-shadow: #fff7f7 1px 1px 2px;
+    padding: 1.5rem;
+}
+
+.banner h2 {
+    font-size: 1.75rem;
+    font-family: 'Rubik Wet Paint', cursive, sans-serif;
+    color: #d8dfa0;
+}
+
+/* Mission Statement  */
+#mission {
+    /* border: 5px solid salmon; */
+    line-height: 1.5;
+    height: 50rem;
+    width: 95%;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.mission-statement {
+    /* border: 5px solid orange; */
+    color: #e16866;
+    height: 25%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-statement h2 {
+    font-size: 2.75rem;
+    font-family:'Acme', cursive;
+    text-decoration: underline;
+    padding: 1.25rem 0;
+}
+
+.mission-statement p {
+    font-size: 1.5rem;
+    font-family: 'Acme', cursive;
+}
+
+.content {
+    /* border:5px solid black ; */
+    font-family: 'Acme', cursive;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    border: .25rem solid #5e48488f ;
+    padding: .75rem;
+    width: 30%;
+    height: 35%;
+    background-color: #d5d5d527;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 2;
+}
+
+.info h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.info p {
+    font-size: 1rem;
+}
+
+.info.source {
+    color: #e4bb82 ;
+}
+
+.info.coffee {
+    color: #d8dfa0;
+}
+
+.info.hiring {
+    color: #6fd08c;
+}
+
+.info.enviornment {
+    color: #7b9ea8;
+}
+
+.info.events {
+    color: #a77c9b;
+}
+
+
+/* Products */
+#products {
+    border-top: .3rem solid #000000dc;
+    border-bottom: .3rem solid #000000dc;
+    height: 72rem;
+    width: 96.5%;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#products h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    color: #d8dfa0;
+    text-decoration: underline;
+    font-family: 'Acme', sans-serif;
+}
+
+.coffee-product {
+    height: 70rem;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.coffee-product figure {
+    background-color: #d5d5d527;
+    font-size: 1rem;
+    font-family: 'Acem', sans-serif;
+    height: 35%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee-product .image-container {
+    height: 50%;
+    width: 70%;
+    padding: 1rem;
+}
+.coffee-product figcaption, .coffee-product p {
+    color: #6fd08c;
+    padding: .5rem;
+    text-align: center;
+}
+
+/* Meet the Saff  */
+#staff {
+    /* border: 5px solid plum; */
+    margin: 1.5rem;
+    padding: 1.5rem; 
+    color: #7b9ea8;
+    font-family: 'Acme', sans-serif;
+}
+
+#staff h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    color: #7b9ea8;
+}
+
+.meet-the-staff {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.meet-the-staff .image-container {
+    height: 35%;
+    width: 35%;
+    padding: 1rem;
+}
+
+#staff p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+/* Footer */
+#footer-nav {
+    border-top:1px solid #000000dc;
+    padding: .75rem;
+    font-size: 1rem;
+    font-family: 'Acme', sans-serif;
+    line-height: 1.25;
+    letter-spacing: .10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a77c9b ;
+}
+
+.social ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social ul li {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
