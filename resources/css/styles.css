@@ -101,6 +101,27 @@ header{
     }
 }
 
+@media only screen and (max-width: 730px){
+    #nav{
+        display: flex;
+        justify-content: flex-start;
+        /* max-width: 98%; */
+    }
+    .logo .image-container {
+        display: none;
+    }
+    #nav ul li a {
+        font-size: 1rem;
+        text-align: center;
+    }
+    #nav button{
+        /* margin: 1rem 0;
+        height: 8%;
+        font-size: 1rem; */
+        display: none;
+    }
+}
+
 /* banner */
 #home .banner {
     top: 4.9rem;
@@ -132,13 +153,14 @@ header{
     color: #d8dfa0;
 }
 
+
+
 /* Mission Statement  */
 #mission {
     /* border: 5px solid salmon; */
     line-height: 1.5;
     height: 50rem;
     width: 95%;
-    margin: 1.5rem;
     padding: 1rem;
 }
 
@@ -217,6 +239,34 @@ header{
     color: #a77c9b;
 }
 
+@media only screen and (max-width: 730px){
+    #mission{
+        padding:0;
+    }
+    .mission-statement{
+        width: 95%;
+    }
+    .mission-statement h2 {
+        font-size: 2.5rem;
+    }
+    .mission-statement p{
+        font-size: 1rem;
+        margin-bottom: .75rem;
+        text-align: center;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        height: 25%;
+    }
+    .info h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .info p{
+        display: none;
+    }
+}
 
 /* Products */
 #products {
@@ -275,9 +325,13 @@ header{
 }
 
 @media only screen and (max-width: 730px){
+    #products{
+        padding: 1rem 0;
+    }
     .coffee-product {
         display: flex;
         justify-content: space-around;
+        padding: 0;
     }
 
     .coffee-product figure{
