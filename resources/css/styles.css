@@ -383,6 +383,7 @@ header{
         align-content: center;
         height: 35%;
         margin: 1rem 0;
+        border: .25rem solid #5e48488f;
     }
 
     .coffee-product .image-container{
