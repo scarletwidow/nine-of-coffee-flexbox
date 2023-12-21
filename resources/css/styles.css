@@ -244,25 +244,55 @@ header{
     color: #a77c9b;
 }
 
+@media only screen and (min-width: 730px) and (max-width: 1025px){
+
+    .mission-statement p{
+        font-size: 1.25rem;
+        margin-bottom: 1rem; 
+    }
+    .content{
+        height: 50%;
+    }
+    .info{
+        margin-bottom: 1rem;
+    }
+    .info h3{
+        font-size: 1.5rem;
+    }
+
+    .info p{
+        font-size: .75rem;
+    }
+}
+
 @media only screen and (max-width: 730px){
     #mission{
         padding:0;
     }
+
     .mission-statement{
         width: 95%;
     }
+
     .mission-statement h2 {
         font-size: 2.5rem;
     }
+
     .mission-statement p{
         font-size: 1rem;
         margin-bottom: 1rem;
         text-align: center;
     }
+
+    .content{
+        justify-content: space-around;
+    }
+
     .info {
         display: flex;
         flex-direction: column;
         height: 25%;
+        width: 35%;
     }
     .info h3{
         font-size: 1.5rem;
@@ -329,22 +359,40 @@ header{
     text-align: center;
 }
 
-@media only screen and (max-width: 730px){
+.image-container.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 1025px){
     #products{
-        padding: 1rem 0;
+        padding: 0;
     }
+}
+
+@media only screen and (max-width: 730px){
+   
     .coffee-product {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         padding: 0;
+        height: 70%;
     }
 
     .coffee-product figure{
         align-content: center;
+        height: 35%;
+        margin: 1rem 0;
     }
 
     .coffee-product .image-container{
         display: none;
+    }
+
+    .image-container.hide{
+        display: block;
+        height: 35%;
+        margin-top: 5rem;
     }
 } 
 
