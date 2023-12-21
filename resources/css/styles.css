@@ -274,6 +274,21 @@ header{
     text-align: center;
 }
 
+@media only screen and (max-width: 730px){
+    .coffee-product {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .coffee-product figure{
+        align-content: center;
+    }
+
+    .coffee-product .image-container{
+        display: none;
+    }
+} 
+
 /* Meet the Saff  */
 #staff {
     /* border: 5px solid plum; */
@@ -307,6 +322,13 @@ header{
 #staff p {
     text-align: center;
     font-size: 1.25rem;
+}
+
+@media only screen and (max-width:730px){
+    .meet-the-staff .image-container{
+        height: 75%;
+        width: 75%;
+    }
 }
 
 /* Footer */
