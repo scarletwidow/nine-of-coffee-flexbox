@@ -332,3 +332,12 @@ header{
     padding: 1rem;
     font-size: 1.25rem;
 }
+
+@media only screen and (max-width: 730px){
+    .contact-us{
+        text-align: center;
+    }
+    #footer-nav p {
+        text-align: center;
+    }
+}
